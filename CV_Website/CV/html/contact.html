@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width = device-width, initial scale = 1.0">
+  <title>Thomas K.</title>
+  <link rel="stylesheet" href="../css/contact_style.css">
+</head>
+<body>
+  <section class="header">
+  <nav>
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="CV.html">Full CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content">
+    <h3 onclick="copyToClipboard()">Email:<br>2049337@brunel.ac.uk</h3>
+    <p onclick="copyToClipboard()" class="hero-btn">Click to copy</p>
+  </div>
+  </section>
+
+  
+  
+  <!--------script--------->
+  <script>
+    function copyToClipboard(text) {
+    var inputc = document.body.appendChild(document.createElement("input"));
+    inputc.value = "2039337@brunel.ac.uk";
+    inputc.focus();
+    inputc.select();
+    document.execCommand('copy');
+    inputc.parentNode.removeChild(inputc);
+    alert("email copied.");
+    }
+    </script>
+</body>
+</html>
